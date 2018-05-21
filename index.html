@@ -1,58 +1,98 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="jheasly.github.io : Items of interest" />
-    <title>Buyer's remorse</title>
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<meta name="description" content="jheasly.github.io : Items of interest" />
+	<title>Stuff I’ve made</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Jheasly.github.io</title>
+	<style>
+	iframe {
+		width: 100% !important;
+	}
+	</style>
+</head>
+<body>
 
-    <style>
-      iframe {
-        width: 100% !important;
-      }
-    </style>
-  </head>
-  <body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
+		<a id="forkme_banner" href="https://github.com/jheasly">View on GitHub</a>
 
-          <a id="forkme_banner" href="https://github.com/jheasly">View on GitHub</a>
+		<h1 id="project_title">Stuff I’ve made</h1>
+		<h2 id="project_tagline">Trying to be useful via the Internets</h2>
 
-          <h1 id="project_title">Buyer's remorse</h1>
-          <h2 id="project_tagline">a.k.a. Trump-voter regret</h2>
+		</header>
+	</div>
 
-        </header>
-    </div>
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+		<h3>Reverse publishing sites</h3>
 
-        <h3>
-        Self-professed Trump voters want more action, less tweeting
-        </h3>
+		<h5>http://local2.registerguard.com/civic/meetings</h5>
+		<p>A place for local credentialed entities to enter meeting information as required by law. Password-protected posts publish immediately to web (and owner has CRUD capability) and reverse publishes daily into print Civic Calendar item.</p>
 
-        <a class="twitter-timeline"  href="https://twitter.com/search?q=stop%20%22I%20voted%22%20tweet%20OR%20tweeting%20to%3Arealdonaldtrump%20OR%20to%3Apotus" data-widget-id="833021150439448577">Tweets about stop "I voted" tweet OR tweeting to:realdonaldtrump OR to:potus</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<h5>http://vote.registerguard.com</h5>
+		<p>A landing page for local election information. Powered by JSON feeds that come from a Django backend which is fed by a Selenium-powered web scraper of Oregon Secretary of State site. Outputs results in InDesign tagged text for use in print.</p>
 
-      </section>
-    </div>
+		<h5>http://go.registerguard.com/entertainment/</h5>
+		<p>A Django entertainment calendar app that allowed for anonymous and trusted users to enter event information, available online and created weekly Entertainment section listing via InDesign tagged text.</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+		<h5>http://cloud.registerguard.com/discovery</h5>
+		<p>Online adventure guide listings powered by Tarbell and Google Sheets that also produces InDesign tagged text for print.</p>
+
+		<h3>Scrapers</h3>
+
+		<h5>http://projects.registerguard.com/police/eugene/</h5>
+		<p>First scraper I wrote, scrapes Eugene Police Department police call log every 15 minutes.</p>
+
+		<h5>http://projects.registerguard.com/police/springfield/</h5>
+		<p>Scrapes Springfield police call log every 15 minutes.</p>
+
+		<h3>Dataviz</h3>
+
+		<h5>http://projects.registerguard.com/pages/2016-precinct/</h5>
+		<p>
+			First attempt w/ Mapbox GL &amp; QGIS to join election results with 
+			precinct shapefile to make GeoJSON and then reduce size of GeoJSON.
+		</p>
+
+		<h3>XML feed mungers & Twitter bots</h3>
+
+		<h5>http://projects.registerguard.com/school-closings/</h5>
+		<p>
+			Parses a push 
+			<a href="https://www.flashalert.net/" target="_blank" rel="nofollow">FlashAlert.net</a> 
+			XML feed every 15 minutes that results, when there are school 
+			delayed openings and closures, in this index page, a home page 
+			widget and a Tweet from @registerguard.
+			(<strong>Note:</strong> If there currently isn't bad weather in 
+			<a href="https://alerts.weather.gov/cap/wwaatmget.php?x=ORZ008&y=1" target="_blank" rel="nofollow">Lane County, Ore., USA</a>, 
+			there probably isn’t a lot to see here.)
+		</p>
+		
+		<h5>http://projects.registerguard.com/school-closings/roads/</h5>
+		<p>
+			Ditto.
+		</p>
+
+	</section>
+	</div>
+
+	<!-- FOOTER-->
+	<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+	</footer>
+	</div>
 
 
 
-  </body>
+</body>
 </html>
