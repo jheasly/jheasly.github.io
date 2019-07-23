@@ -44,10 +44,10 @@
 		<h3>Scrapers</h3>
 
 		<h5><a href="http://projects.registerguard.com/police/eugene/" target="_blank" rel="nofollow">http://projects.registerguard.com/police/eugene/</a></h5>
-		<p>First scraper I wrote; Dec. 2008. Scrapes Eugene Police Department police call log every 15 minutes. Currently >893K rows.</p>
+		<p>First scraper I wrote; Dec. 2008. Scrapes Eugene Police Department police call log every 15 minutes. Currently >920K rows.</p>
 
 		<h5><a href="http://projects.registerguard.com/police/springfield/" target="_blank" rel="nofollow">http://projects.registerguard.com/police/springfield/</a></h5>
-		<p>Scrapes Springfield police call log every 15 minutes. Since 2013, >211K rows.</p>
+		<p>Scrapes Springfield police call log every 15 minutes. Since 2013, >230K rows.</p>
 
 		<h3>Web sites that reverse publish</h3>
 
@@ -65,7 +65,7 @@
 		<h5><a href="http://go.registerguard.com/entertainment/" target="_blank" rel="nofollow">http://go.registerguard.com/entertainment/</a></h5>
 		<p>A currently superseded Django entertainment calendar app that allowed for anonymous and trusted users to enter event information, available online and created weekly Entertainment section listing via InDesign tagged text.</p>
 
-		<h5><a href="http://cloud.registerguard.com/discovery" target="_blank" rel="nofollow">http://cloud.registerguard.com/discovery</a></h5>
+		<h5><a href="https://cloud.registerguard.com/discovery/" target="_blank" rel="nofollow">http://cloud.registerguard.com/discovery</a></h5>
 		<p>Online adventure guide listing utilizing Leaflet & Open Street Map, powered by Tarbell and Google Sheets that also produces InDesign tagged text for print.<br />
 			<span style="font-weight: bold">Public repo:</span> <a href="https://github.com/registerguard/discovery" target="_blank" rel="noopener noreferrer">github.com/registerguard/discovery</a>
 		</p>
@@ -92,9 +92,9 @@
 		</p>
 
 		<h3>Also, built an automated print archive.</h3>
-		<p>Our previous CMS had no public-facing archive, so I took it upon myself to build one. After much experimentation, I eventually found a combination of iODBC (mxODBC? https://www.egenix.com/products/python/mxODBC/) and Jython that worked.</p>
-		<p>We found lots of uses for it. Here's <a href="http://projects.registerguard.com/feeds/newsbank/?date=20180101" target="_blank" rel="nofollow">an Atom feed</a> it powers.</p>
-		<p>Using this archive app I was able to quickly export nine year's worth of stories — more than 250,000 items plus related assets — via a vendor's custom XML into a new CMS.</p>
+		<p>Our previous CMS had no public-facing archive, so I took the initiative to build one. The only available database driver was written in Java, so I learned enough Jython to get a nightly cronjob export working.</p>
+		<p>The archive was useful for many things, e.g. it powered story feeds used by The Associated Press, ProQuest, etc. Here's <a href="http://projects.registerguard.com/feeds/newsbank/?date=20180101" target="_blank" rel="nofollow">a NewsBank Atom feed</a>.</p>
+		<p>When it came time to transition to a new CMS, I used the archive app to quickly pull together a custom XML export of nine year's worth of stories — more than 250,000 locally-produced items plus related assets — that were all imported into the new CMS; no stories lost.</p>
 
 	</section>
 	</div>
