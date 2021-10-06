@@ -33,25 +33,25 @@
 	<div id="main_content_wrap" class="outer">
 	<section id="main_content" class="inner">
 
-		<h3>PDF extraction</h3>
+		<h3>Data extraction</h3>
 
 		<h5><a href='https://github.com/jheasly/homeless-cleanups' target="_blank" rel="nofollow">https://github.com/jheasly/homeless-cleanups</a></h5>
 
-		<p>Saved homeless camp clean-up request data into a .csv file after extraction from 6,590 pages in 
-			2,814 documents using the pdfplumber Python package in a Jupyther 
-			notebook.</p>
+		<p>Using the pdfplumber Python package, wrote a jupyter notebook script 
+			to go through 6,590 pages in 2,814 documents FOIA'd from the City 
+			of Eugene to extract work order data and write it to a .csv file.</p>
 
 		<h3>Dataviz</h3>
 
 		<h5><a href='https://www.gannett-cdn.com/west-hub-production/homeless-camps/index.html' target="_blank" rel="nofollow">https://www.gannett-cdn.com/west-hub-production/homeless-camps/index.html</a></h5>
 
-		<p>Using data from .csv file created above, made a map in Mapbox GL and 
+		<p>With data from .csv file created above, made a map in Mapbox GL and 
 			hosted it in a Google Cloud Platform bucket and embedded it in  
 			<a href='https://www.registerguard.com/in-depth/news/2021/09/23/eugene-homeless-safe-sleep-sites-camp-clean-investigation-work-orders-covid/5454251001/' target="_blank" rel="nofollow">this 
 			story presentation</a> I built using Gannett's proprietary In Depth 
 			framework.</p>
 
-		<h5><a href="http://projects.registerguard.com/pages/2016-precinct/" target="_blank" rel="nofollow">http://projects.registerguard.com/pages/2016-precinct/</a></h5>
+		<h5><a href="http://projects.registerguard.com/pages/2016-precinct/" target="_blank" rel="nofollow">How Lane County voted for president</a></h5>
 		<p>
 			First attempt at a choropleth, using Mapbox GL &amp; QGIS to join scraped county election results with 
 			precinct shapefile. Exported GeoJSON out of QGIS (and then learned about reducing GeoJSON file size).
@@ -59,19 +59,17 @@
 
 		<h3>Scrapers</h3>
 
-		<h5><a href="https://www.usatoday.com/story/news/investigations/2020/06/01/coronavirus-nursing-home-deaths-top-40-600/5273075002/" target="_blank" rel="nofollow">‘A national disgrace’: 40,600 deaths tied to US nursing homes</a></h5>
-		<h6>USA TODAY national data & investigations team</h6>
-		<p>Pitched in on a distributed three-person collaboration of developers 
-			building scrapers on deadline to supplement the manual collection 
-			of state nursing home data for a story detailing the COVID-19 death 
-			toll at long-term care facilities.</p>
+		<h5>USA TODAY national data & investigations team: <a href="https://www.usatoday.com/story/news/investigations/2020/06/01/coronavirus-nursing-home-deaths-top-40-600/5273075002/" target="_blank" rel="nofollow">‘A national disgrace’: 40,600 deaths tied to US nursing homes</a></h5>
+		<p>Pitched in to work on a distributed three-person collaboration of 
+			Python developers building scrapers on deadline to supplement the 
+			manual collection of state nursing home data for a USA TODAY story 
+			detailing the national COVID-19 death toll at long-term care 
+			facilities.</p>
 
 		<h5><a href="http://projects.registerguard.com/police/eugene/" target="_blank" rel="nofollow">Eugene, Ore., police call log</a></h5>
-		<h6>registerguard.com</h6>
 		<p>First scraper I wrote; Dec. 2008. Scrapes Eugene Police Department police call log every 15 minutes. Currently >920K rows.</p>
 
 		<h5><a href="http://projects.registerguard.com/police/springfield/" target="_blank" rel="nofollow">Springfield, Ore., police call log</a></h5>
-		<h6>registerguard.com</h6>
 		<p>Scrapes Springfield police call log every 15 minutes. Since 2013, >230K rows.</p>
 
 		<h3>Websites that reverse publish, APIs</h3>
